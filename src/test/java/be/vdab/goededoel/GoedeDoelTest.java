@@ -41,4 +41,9 @@ class GoedeDoelTest {
 		assertThat(doel).isNotEqualTo(BigDecimal.ZERO);
 	}
 
+	@Test
+	void gelijkeDoelGevenDezelfdeHashCode() {
+		assertThat(doel).hasSameHashCodeAs(new GoedeDoel(NAAM));
+	}
+
 }
