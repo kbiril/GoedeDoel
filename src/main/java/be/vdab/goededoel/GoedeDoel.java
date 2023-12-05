@@ -39,8 +39,8 @@ public class GoedeDoel {
 		return o instanceof GoedeDoel ander && naam.equalsIgnoreCase(ander.naam);
 	}
 
-//	@Override
-//	public int hashCode() {
-//		return Objects.hash(naam.toLowerCase());
-//	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(naam.toLowerCase());
+	}
 }
